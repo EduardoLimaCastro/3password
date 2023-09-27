@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+body {
+  background: linear-gradient(180deg, #14131B 0%, #08070B 100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container .title {
+  color: #817D92;
+  font-family: JetBrains Mono;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.container .passw {
+  width: 540px;
+  height: 80px;
+  background-color: #24232C;
+  margin-bottom: 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.container .passw .password {
+  border: none;
+  margin-left: 32px;
+  margin-top: 30px;
+  width: 400px;
+  height: 78px;
+  flex-shrink: 0;
+  border: none;
+  color: var(--Almost-White, #E6E5EA);
+  opacity: 0.25;
+  font-family: JetBrains Mono;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.container .passw .password:focus {
+  outline: none;
+}
+.container .passw button {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  background-color: #24232C;
+  border: none;
+  display: flex;
+}
+.container .passw button .copied {
+  color: var(--Neon-Green, #A4FFAF);
+  font-family: JetBrains Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-right: 15px;
+  display: none;
+}
+.container .passw button i {
+  transform: scale(2);
+  color: #A4FFAF;
+  cursor: pointer;
+}
+.container .passw button i:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+.container .passw button .button::before {
+  content: "Copied";
+  color: var(--Neon-Green, #A4FFAF);
+  font-family: JetBrains Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.container .container_box {
+  width: 540px;
+  height: 525px;
+  flex-shrink: 0;
+  background: #24232C;
+}
+.container .container_box .length_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px 0 32px;
+  height: 42px;
+}
+.container .container_box .length_info .info {
+  color: #E6E5EA;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: JetBrains Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.container .container_box .length_info .length {
+  color: #A4FFAF;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: JetBrains Mono;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.container .container_box .container_slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .container_box .container_slider .slider {
+  width: 476px;
+  height: 8px;
+  -webkit-appearance: none;
+  background: linear-gradient(90deg, rgb(164, 255, 175) 48%, rgb(24, 23, 31) 48%);
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.container .container_box .container_slider .slider:hover {
+  opacity: 1;
+}
+.container .container_box .container_slider .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #E6E5EA;
+  cursor: pointer;
+}
+.container .container_box .container_slider .slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #E6E5EA;
+  cursor: pointer;
+}
+.container .container_box .container_checkbox {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+  margin-top: 32px;
+  gap: 19px;
+}
+.container .container_box .container_checkbox .upper input, .container .container_box .container_checkbox .letter input, .container .container_box .container_checkbox .icons input, .container .container_box .container_checkbox .numbers input {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  accent-color: #A4FFAF;
+}
+.container .container_box .container_checkbox .upper label, .container .container_box .container_checkbox .letter label, .container .container_box .container_checkbox .icons label, .container .container_box .container_checkbox .numbers label {
+  color: var(--Almost-White, #E6E5EA);
+  font-family: JetBrains Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+.container .container_box .container_strength {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.container .container_box .container_strength .strength_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 476px;
+  height: 72px;
+  flex-shrink: 0;
+  background: #18171F;
+  margin: 0 auto;
+}
+.container .container_box .container_strength .strength_box .strength_title {
+  color: #817D92;
+  font-family: JetBrains Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 30px;
+}
+.container .container_box .container_strength .strength_box .strength_class {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-right: 30px;
+}
+.container .container_box .container_strength .strength_box .strength_class .strength_value {
+  color: var(--Almost-White, #E6E5EA);
+  text-align: right;
+  font-family: JetBrains Mono;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.container .container_box .container_strength .strength_box .strength_class .tooWeak {
+  width: 10px;
+  height: 28px;
+  flex-shrink: 0;
+  border: 3px solid white;
+  background: var(--1---Red, #F64A4A);
+}
+.container .container_box .container_strength .strength_box .strength_class .weak, .container .container_box .container_strength .strength_box .strength_class .medium, .container .container_box .container_strength .strength_box .strength_class .strong {
+  width: 10px;
+  height: 28px;
+  flex-shrink: 0;
+  border: 3px solid white;
+}
+.container .container_box .generate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 476px;
+  height: 65px;
+  margin: 0 auto;
+  flex-shrink: 0;
+  background: #A4FFAF;
+  color: #24232C;
+  font-family: JetBrains Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container .passw {
+    width: 343px;
+    height: 64px;
+  }
+  .container .container_box {
+    width: 343px;
+    height: 500px;
+  }
+  .container .container_box .container_slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .container_box .container_slider .slider {
+    width: 311px;
+  }
+  .container .container_box .container_checkbox {
+    margin-left: 10px;
+  }
+  .container .container_box .container_strength .strength_box {
+    width: 311px;
+    height: 56px;
+    flex-shrink: 0;
+  }
+  .container .container_box .container_strength .strength_box .strength_title {
+    color: var(--Grey, #817D92);
+    text-align: center;
+    font-family: JetBrains Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .container .container_box .container_strength .strength_box .strength_class {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-right: 30px;
+  }
+  .container .container_box .container_strength .strength_box .strength_class .strength_value {
+    color: var(--Almost-White, #E6E5EA);
+    text-align: right;
+    font-family: JetBrains Mono;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .container .container_box .container_strength .strength_box .strength_class .tooWeak {
+    width: 10px;
+    height: 28px;
+    flex-shrink: 0;
+    border: 3px solid white;
+    background: var(--1---Red, #F64A4A);
+  }
+  .container .container_box .container_strength .strength_box .strength_class .weak, .container .container_box .container_strength .strength_box .strength_class .medium, .container .container_box .container_strength .strength_box .strength_class .strong {
+    width: 10px;
+    height: 28px;
+    flex-shrink: 0;
+    border: 3px solid white;
+  }
+  .container .container_box .generate {
+    width: 311px;
+    height: 56px;
+    flex-shrink: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */
