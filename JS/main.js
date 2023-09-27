@@ -69,6 +69,7 @@ function generatePassword(lower,upper,number,symbol,length){
     }else{
         alert(`Length should be at least ${typesCount}`)
     }
+    generatedPassword = generatedPassword.substring(0,length)
     return generatedPassword
 }
 
