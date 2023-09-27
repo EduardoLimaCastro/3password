@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://password-generator-app-weld-chi.vercel.app/)
+- Solution URL: [Solution URL](https://password-generator-app-weld-chi.vercel.app/)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
