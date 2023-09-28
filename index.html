@@ -13,61 +13,63 @@
     <title>Password Generator</title>
 </head>
 <body>
-    <div class="container">
-        <h1 class="title" role="text">Password Generator</h1>
-        <div class="passw">
-            <span class="password" id="password">P4$5W0rD!</span>
-            <button type="submit" id="copy"><span class="copied" id="copied">Copied</span><i class="fa-solid fa-copy"></i></button>
-        </div>
-        <div class="container_box">
-            <div class="length_info">
-                <h3 class="info">Character Length</h3>
-                <p class="length" id="value_slider">10</p>
+    <main>
+        <div class="container" role="main">
+            <h1 class="title">Password Generator</h1>
+            <div class="passw">
+                <span class="password" id="password">P4$5W0rD!</span>
+                <button type="submit" id="copy"><span class="copied" id="copied">Copied</span><i class="fa-solid fa-copy"></i></button>
             </div>
-            <div class="container_slider">
-                <input type="range" min="1" max="20" value="10" id="myslider" class="slider">
-            </div>
-            <div class="container_checkbox">
-                <div class="upper">
-                    <input type="checkbox" checked="checked" id="upperCheck">
-                    <label class="containercheck" for="upperCheck">Include Uppercase Letters
-                    </label>
-                    <span class="checkmark"></span>   
-                </div>                
-                <div class="letter">
-                    <input type="checkbox" id="lowCheck">
-                    <label class="containercheck" for="lowCheck">Include Lowercase Letters
-                    </label>
-                    <span class="checkmark"></span> 
+            <div class="container_box">
+                <div class="length_info">
+                    <h3 class="info">Character Length</h3>
+                    <p class="length" id="value_slider">10</p>
                 </div>
-                <div class="numbers">
-                    <input type="checkbox" id="numbersCheck">
-                    <label class="containercheck" for="numbersCheck">Include Numbers
-                    </label>
-                    <span class="checkmark"></span>      
-                </div>       
-                <div class="icons">
-                    <input type="checkbox" id="symbolsCheck">
-                    <label class="containercheck" for="symbolsCheck">Include Symbols
-                    </label>
-                    <span class="checkmark"></span> 
-                </div>                                   
-            </div>
-            <div class="container_strength">
-                <div class="strength_box">
-                    <p class="strength_title">Strength</p>
-                    <div class="strength_class">
-                        <p class="strength_value" id="strength_value">TOO WEAK!</p>
-                        <div class="tooWeak" id="tooWeak"></div>
-                        <div class="weak" id="weak"></div>
-                        <div class="medium" id="medium"></div>
-                        <div class="strong" id="strong"></div>
+                <div class="container_slider">
+                    <input type="range" min="1" max="20" value="10" id="myslider" class="slider">
+                </div>
+                <div class="container_checkbox">
+                    <div class="upper">
+                        <input type="checkbox" checked="checked" id="upperCheck">
+                        <label class="containercheck" for="upperCheck">Include Uppercase Letters
+                        </label>
+                        <span class="checkmark"></span>   
+                    </div>                
+                    <div class="letter">
+                        <input type="checkbox" id="lowCheck">
+                        <label class="containercheck" for="lowCheck">Include Lowercase Letters
+                        </label>
+                        <span class="checkmark"></span> 
+                    </div>
+                    <div class="numbers">
+                        <input type="checkbox" id="numbersCheck">
+                        <label class="containercheck" for="numbersCheck">Include Numbers
+                        </label>
+                        <span class="checkmark"></span>      
+                    </div>       
+                    <div class="icons">
+                        <input type="checkbox" id="symbolsCheck">
+                        <label class="containercheck" for="symbolsCheck">Include Symbols
+                        </label>
+                        <span class="checkmark"></span> 
+                    </div>                                   
+                </div>
+                <div class="container_strength">
+                    <div class="strength_box">
+                        <p class="strength_title">Strength</p>
+                        <div class="strength_class">
+                            <p class="strength_value" id="strength_value">TOO WEAK!</p>
+                            <div class="tooWeak" id="tooWeak"></div>
+                            <div class="weak" id="weak"></div>
+                            <div class="medium" id="medium"></div>
+                            <div class="strong" id="strong"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <button class="generate" id="generateBtn" aria-label="Generate">GENERATE  <img src="./assets/images/icon-arrow-right.svg"></button>
-        </div>        
-    </div>
+                <button class="generate" id="generateBtn" aria-label="Generate">GENERATE  <img src="./assets/images/icon-arrow-right.svg"></button>
+            </div>        
+        </div>
+    </main> 
     <script src="./JS/main.js"></script>
 </body>
 </html>
